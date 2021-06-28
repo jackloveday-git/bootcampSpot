@@ -1,0 +1,144 @@
+    body {
+        background-color: rgba(19, 86, 153, 0.781);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    button {
+        background: transparent;
+        border: none !important;
+        color: white;
+    }
+
+  .header {
+    padding: 15px;
+    text-align: center;
+    background: dodgerblue;
+    color: white;
+    font-size: 20px;
+  }
+
+  .title-banner {
+    padding: 5px;
+    text-align: center;
+    background: dodgerblue;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .flex-container-banner {
+      display: flex;
+      flex-direction: row;
+      height: 33%;
+      justify-content: space-evenly;
+      padding: 5px;
+      background-color: dodgerblue;
+      color: white;
+      font-size: 15px;
+      outline-color: black;
+      outline-style: solid;
+  }
+
+  .flex-container-banner > div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: 33%;
+    background-color: rgba(19, 86, 153, 0.781);
+    color: white;
+    font-size: 15px;
+}
+
+.flex-container-aboutme {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.flex-container-aboutme > div {
+    text-align: center;
+    height: 99%;
+    width: 50%;
+}
+
+.flex-container-contact {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(173, 173, 173);
+    outline-color: black;
+    outline-style: solid;
+}
+
+.flex-container-contact > div {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    outline-style: solid;
+    outline-color: black;
+}
+
+.flex-container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: dodgerblue;
+    outline-color: black;
+    outline-style: solid;
+}
+
+.project-img {
+    display: flex;
+    text-align: left;
+    outline-style: solid;
+    outline-color: white;
+}
+
+.project-img.latest {
+    display: flex;
+    flex-grow: 2;
+    text-align: left;
+    outline-style: solid;
+    outline-color: white;
+}
+
+.imgwrap {
+    width: 100%;
+    margin: auto;
+}
+
+.imgwrap img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}

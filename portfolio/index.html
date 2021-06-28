@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Adjust Title, Link Style Sheet.-->
+    <title>JLoveday's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Create 'header' and Banner the user's will be greeted with.-->
+    <div class="header">
+        <h1>Jack Loveday's Portfolio</h1>
+        <p>A live website that will be updated consistently with new/completed projects.</p>
+    </div> 
+
+    <!--Create a container holding buttons that will scroll the user to the desired section.-->
+    <div class="flex-container-banner">
+        <div>
+            <button onclick="aboutScroll()">About Me</button>
+        </div>
+        <div>
+            <button onclick="contactScroll()">Contact Info</button>
+        </div>
+        <div>
+            <button onclick="projectsScroll()">Projects</button>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Create a container holding the About section title.-->
+    <div class="flex-container-banner">
+        <div id="aboutBanner">About Me</div>
+    </div>
+
+    <!--Create a seperate container holding the contents of the section (Author Image, Description Text).-->
+    <div class="flex-container-aboutme">
+        <div><img src="headshot1.png" width="500px" height="500px"></div>
+        <div>My name is Jack Loveday, and welcome to my live portfolio. I am a 25yo male, residing in Ottawa, ON, CAN. I am an amateur web developer, and this will be my first major project that will be consistantly updated and maintained. I am also interested in gaming, sports, craft beer, many music genres, live music, and social time with my friends.</div>
+    </div>
+
+    <!--Line break to spread the content out.-->
+    <br>
+    
+    <!--Create a container holding the Contact Info section title.-->
+    <div class="flex-container-banner">
+        <div id="contactBanner">Contact Info</div>
+    </div>
+
+    <!--Create a seperate container holding the contents of the section (Various Contact Info Links: Email, Discord, LinkedIn, Indeed, Github).-->
+    <div class="flex-container-contact">
+        <div>
+            <a href="mailto:jack.loveday95@gmail.com">
+                <img src="Gmail-logo.jpg" width="50px" height="50px">
+            </a>
+        </div>
+        <div>
+            <a href="https://discordapp.com/users/Lumberjack#5644/">
+                <img src="discordlogo.jpg" width="50px" height="50px">
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/jackloveday-git">
+                <img src="githublogo.png" width="50px" height="50px">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/jack-loveday-2a847020a/">
+                <img src="linkedinlogo.png" width="50px" height="50px">
+            </a>
+        </div>
+        <div>
+            <a href="https://my.indeed.com/p/jackl-emelw6n">
+                <img src="indeedlogo.png" width="50px" height="50px">
+            </a>
+        </div>
+    </div>
+    
+    <!--More spacing.-->
+    <br>
+    
+    <!--Create a container holding the Projects section title.-->
+    <div class="flex-container-banner">
+        <div id="projectBanner">Projects</div>
+    </div>
+
+    <!--Create a seperate container holding the contents of the section (Different projects with a link to the live version of each one).-->
+    <div class="flex-container-projects">
+        <!--Latest project has a seperate class to increase the dimensions while maintaining aspect ratio.-->
+        <div class="project-img latest">
+            <div class="imgwrap">
+                <a href="">
+                    <img title="Digital Portfolio" src="portfolio-img.png" alt="Digital Portfolio Img">
+                </a>
+            </div>
+        </div>
+        <!--The bellow are samples/filler imgs, link are not included as they would be dead links.-->
+        <div class="project-img">
+            <div class="imgwrap">
+                <img title="Sample 1" src="sample-img.png">
+            </div>
+        </div>
+        <div class="project-img">
+            <div class="imgwrap">
+                <img title="Sample 2" src="sample-img.png">
+            </div>
+        </div>
+        <div class="project-img">
+            <div class="imgwrap">
+                <img title="Sample 3" src="sample-img.png">
+            </div>
+        </div>
+        <div class="project-img">
+            <div class="imgwrap">
+                <img title="Sample 4" src="sample-img.png">
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<!--Script which allows the navigation buttons to scroll to desired sections.-->
+<script>
+    function aboutScroll() {
+        var elmnt = document.getElementById("aboutBanner");
+        elmnt.scrollIntoView();
+    }
+
+    function contactScroll() {
+        var elmnt = document.getElementById("contactBanner");
+        elmnt.scrollIntoView();
+    }
+
+    function projectsScroll() {
+        var elmnt = document.getElementById("projectBanner");
+        elmnt.scrollIntoView();
+    }
+</script>
+
+</html>
